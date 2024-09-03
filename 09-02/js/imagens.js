@@ -1,5 +1,5 @@
 'use strick';
-
+function imgAnuncios(){
 const imagens = [
     {
         "id": 11,
@@ -25,3 +25,4 @@ for(let imagem of imagens){
 }
 
 anuncios.innerHTML = listaAnuncios;
+}
