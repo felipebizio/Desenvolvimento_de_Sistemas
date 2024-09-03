@@ -39,21 +39,37 @@ let aulas = [
         "chave": null
     }
 ]
+
 let tabela = document.getElementById('tabela');
-
-
 
 let exibir = '';
 for(let aula of aulas){
+    //Abreviar data inicio
     let horaInicio = new Date(aula.data_hora_inicio).toLocaleTimeString('pt-BR', {hour: '2-digit',minute: '2-digit',hour12: false});
+    //Abreviar data final
     let horaFim = new Date(aula.data_hora_fim).toLocaleTimeString('pt-BR', {hour: '2-digit',minute: '2-digit',hour12: false});
-    exibir += '<tr>'
+    //Abreviar Und Curricular
+    let undCurricular = aula.unidade_curricular;
+    let pieces = undCurricular.split(' ');
+    pieces.splice(-2,2);
+    let abrev = pieces[0].substring(0,4);
+    let abreviado = (abrev +'. ' + pieces.pop());
+
+    //Abreviar Ambiente
+    let amb = aula.ambiente;
+    let ambi = amb.split('-');
+    ambi.splice(0,2);
+    let ambiente = ambi.join('-');
+
+    let classe = aula % 2 === 0 ? "azul" : "branco";
+
+    exibir += "<tr class = '" + classe + "'>";
     exibir += '<td>'+horaInicio+'</td>'
     exibir += '<td>'+horaFim+'</td>'
     exibir += '<td>'+aula.turma+'</td>'
     exibir += '<td>'+aula.instrutor+'</td>'
-    exibir += '<td>'+aula.unidade_curricular+'</td>'
-    exibir += '<td>'+aula.ambiente+'</td>'
+    exibir += '<td>'+abreviado+'</td>'
+    exibir += '<td>'+ambiente+'</td>'
     exibir += '</tr>'
 }
 
@@ -85,3 +101,4 @@ for(let imagem of imagens){
 }
 
 anuncios.innerHTML = listaAnuncios;
+

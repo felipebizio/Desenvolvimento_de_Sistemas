@@ -1,0 +1,22 @@
+td{
+    text-align: center;
+    padding: 8;
+}
+
+#tabela{
+    width: 100%;
+}
+
+
+#anuncios{
+    width: 20%;
+}
+
+#anuncios img{
+    max-width: 100%;
+}
+
+
+.branco{
+    background-color: rgba(51, 185, 247, 0.658);
+}
