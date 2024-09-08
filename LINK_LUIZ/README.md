@@ -6,7 +6,7 @@ Este é um projeto de Linktree desenvolvido utilizando HTML, CSS e JavaScript. E
 
 ## Imagem do projeto
 
-![Imagem do projeto.](https://github.com/felipebizio/linktree-luiz/blob/main/assets/screencapture.png)
+![Imagem do projeto.](https://github.com/felipebizio/Desenvolvimento_de_Sistemas/blob/main/LINK_LUIZ/assets/screencapture.png)
 
 
 ## Feedback
