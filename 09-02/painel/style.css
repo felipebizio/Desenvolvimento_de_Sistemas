@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 10;
+    border: 0;
+}
+td,th{
+    text-align: center;
+    padding: 8px;
+}
+
+#aulas{
+    width: 80%;
+    float: left;
+}
+
+
+#anuncios{
+    width: 20%;
+    display: inline-block;
+}
+
+#anuncios img{
+    max-width: 100%;
+}
+
+
+tr:nth-child(even) {
+    background-color: rgba(51, 185, 247, 0.658);
+}
+
+/* tr:nth-child(odd) {
+    background-color: rgba(247, 244, 51, 0.658);
+} */
+
+#conteudo{
+    display: flex;
+}
+table{
+    width: 100%;
+}
